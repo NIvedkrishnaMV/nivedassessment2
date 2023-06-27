@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assessment.css">
+</head>
+<body>
+<center>
+    <h1>Form Validation</h1>
+    <form action="/assignment-3-nived-83270eeda56783c6f833642e939cbe801ff89dbf/index.html">
+   <p>
+        <label for="phone" >PHONE NUMBER:
+            <input type="text" id="phone" onkeyup="return validatename()">
+         </label>
+    </p>
+    <p><span id="err"></span></p>
+    <p>
+        <label for="password">PASSWORD:
+            <input type="password" id="pass" onkeyup="return validatepass()">
+        </label>    
+    </p>
+    <p><span id="err1"></span></p>
+    <p><span id="str"></span></p>
+    <p>
+        <label for="email" >EMAIL:
+            <input type="email" id="email" onkeyup="return validateemail()">
+        </label>
+    </p>
+    <p><span id="err2"></span></p>
+    <p>
+        <button type="submit" onclick="return validateform()">Log In</button>
+    </p>
+    
+    
+    </form>
+    <script src="/assessment.js"></script>
+</center>
+</body>
+</html>
